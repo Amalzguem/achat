@@ -1,4 +1,4 @@
-iversion: "3.8"
+version: "3.8"
 
 services: 
   mysqldb:
@@ -13,7 +13,7 @@ services:
     volumes:
       - db:/var/lib/mysql
 
-  app-timesheet:
+  app-achat:
     depends_on:
       - mysqldb
     image: amalz/achat:1.0.0
